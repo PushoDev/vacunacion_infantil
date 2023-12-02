@@ -1,10 +1,11 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-	<title>Inicio</title>
+	<title>Resumen Gral | Vac.Inf ©</title>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-	<link rel="stylesheet" href="./css/main.css">
+	<link rel="shortcut icon" href="<?php echo base_url('favicon.ico'); ?>" type="image/x-icon">
+	<link rel="stylesheet" href="<?php echo base_url('/css/main.css'); ?>">
 </head>
 <body>
 	<!-- SideBar -->
@@ -15,10 +16,10 @@
 			<div class="full-box text-uppercase text-center text-titles dashboard-sideBar-title">
 				company <i class="zmdi zmdi-close btn-menu-dashboard visible-xs"></i>
 			</div>
-			<!-- SideBar User info -->
+			<!-- SideBar User info / Informacion del Usuario -->
 			<div class="full-box dashboard-sideBar-UserInfo">
 				<figure class="full-box">
-					<img src="./assets/avatars/AdminMaleAvatar.png" alt="UserIcon">
+					<img src="<?php echo base_url('/assets/avatars/AdminMaleAvatar.png'); ?>" alt="UserIcon">
 					<figcaption class="text-center text-titles">User Name</figcaption>
 				</figure>
 				<ul class="full-box list-unstyled text-center">
@@ -39,7 +40,7 @@
 					</li>
 				</ul>
 			</div>
-			<!-- SideBar Menu -->
+			<!-- SideBar Menu / Barra del Menu -->
 			<ul class="list-unstyled full-box dashboard-sideBar-Menu">
 				<li>
 					<a href="home.html">
@@ -112,7 +113,7 @@
 		<div class="full-box text-center" style="padding: 30px 10px;">
 			<article class="full-box tile">
 				<div class="full-box tile-title text-center text-titles text-uppercase">
-					Admin
+					CMF
 				</div>
 				<div class="full-box tile-icon text-center">
 					<i class="zmdi zmdi-account"></i>
@@ -124,7 +125,7 @@
 			</article>
 			<article class="full-box tile">
 				<div class="full-box tile-title text-center text-titles text-uppercase">
-					Teacher
+					Vacunas
 				</div>
 				<div class="full-box tile-icon text-center">
 					<i class="zmdi zmdi-male-alt"></i>
@@ -136,7 +137,7 @@
 			</article>
 			<article class="full-box tile">
 				<div class="full-box tile-title text-center text-titles text-uppercase">
-					Student
+					Niños
 				</div>
 				<div class="full-box tile-icon text-center">
 					<i class="zmdi zmdi-face"></i>
@@ -154,7 +155,7 @@
 			<section id="cd-timeline" class="cd-container">
                 <div class="cd-timeline-block">
                     <div class="cd-timeline-img">
-                        <img src="assets/avatars/StudetMaleAvatar.png" alt="user-picture">
+                        <img src="<?php echo base_url('/assets/avatars/AdminMaleAvatar.png'); ?>" alt="user-picture">
                     </div>
                     <div class="cd-timeline-content">
                         <h4 class="text-center text-titles">1 - Name (Admin)</h4>
@@ -167,7 +168,7 @@
                 </div>  
                 <div class="cd-timeline-block">
                     <div class="cd-timeline-img">
-                        <img src="assets/avatars/StudetMaleAvatar.png" alt="user-picture">
+                        <img src="<?php echo base_url('/assets/avatars/AdminMaleAvatar.png'); ?>" alt="user-picture">
                     </div>
                     <div class="cd-timeline-content">
                         <h4 class="text-center text-titles">2 - Name (Teacher)</h4>
@@ -180,7 +181,7 @@
                 </div>
                 <div class="cd-timeline-block">
                     <div class="cd-timeline-img">
-                        <img src="assets/avatars/StudetMaleAvatar.png" alt="user-picture">
+                        <img src="<?php echo base_url('/assets/avatars/AdminMaleAvatar.png'); ?>" alt="user-picture">
                     </div>
                     <div class="cd-timeline-content">
                         <h4 class="text-center text-titles">3 - Name (Student)</h4>
@@ -193,7 +194,7 @@
                 </div>
                 <div class="cd-timeline-block">
                     <div class="cd-timeline-img">
-                        <img src="assets/avatars/StudetMaleAvatar.png" alt="user-picture">
+                        <img src="<?php echo base_url('/assets/avatars/AdminMaleAvatar.png'); ?>" alt="user-picture">
                     </div>
                     <div class="cd-timeline-content">
                         <h4 class="text-center text-titles">4 - Name (Personal Ad.)</h4>
@@ -211,13 +212,13 @@
 	</section>
 
 	<!--====== Scripts -->
-	<script src="./js/jquery-3.1.1.min.js"></script>
-	<script src="./js/sweetalert2.min.js"></script>
-	<script src="./js/bootstrap.min.js"></script>
-	<script src="./js/material.min.js"></script>
-	<script src="./js/ripples.min.js"></script>
-	<script src="./js/jquery.mCustomScrollbar.concat.min.js"></script>
-	<script src="./js/main.js"></script>
+	<script src="<?php echo base_url('/js/jquery-3.1.1.min.js'); ?>"></script>
+	<script src="<?php echo base_url('/js/sweetalert2.min.js'); ?>"></script>
+	<script src="<?php echo base_url('/js/bootstrap.min.js'); ?>"></script>
+	<script src="<?php echo base_url('/js/material.min.js'); ?>"></script>
+	<script src="<?php echo base_url('/js/ripples.min.js'); ?>"></script>
+	<script src="<?php echo base_url('/js/jquery.mCustomScrollbar.concat.min.js'); ?>"></script>
+	<script src="<?php echo base_url('/js/main.js'); ?>"></script>
 	<script>
 		$.material.init();
 	</script>

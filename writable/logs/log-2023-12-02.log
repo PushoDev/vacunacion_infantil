@@ -1,0 +1,9 @@
+CRITICAL - 2023-12-02 16:32:12 --> syntax error, unexpected double-quoted string " alt=", expecting "," or ";"
+in APPPATH\Views\projects\administrar.php on line 22.
+ 1 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('projects/administrar', [], true)
+ 3 APPPATH\Controllers\Home.php(16): view('projects/administrar')
+ 4 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Home->administracion()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
