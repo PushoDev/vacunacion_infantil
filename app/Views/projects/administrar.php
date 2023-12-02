@@ -43,13 +43,13 @@
 			<!-- SideBar Menu / Barra del Menu -->
 			<ul class="list-unstyled full-box dashboard-sideBar-Menu">
 				<li>
-					<a href="home.html">
-						<i class="zmdi zmdi-view-dashboard zmdi-hc-fw"></i> Dashboard
+					<a href="<?php echo base_url('inventario/administrar'); ?>">
+						<i class="zmdi zmdi-view-dashboard zmdi-hc-fw"></i> Resumen Gral
 					</a>
 				</li>
 				<li>
 					<a href="#!" class="btn-sideBar-SubMenu">
-						<i class="zmdi zmdi-case zmdi-hc-fw"></i> Administración <i class="zmdi zmdi-caret-down pull-right"></i>
+						<i class="zmdi zmdi-case zmdi-hc-fw"></i> Vacunas <i class="zmdi zmdi-caret-down pull-right"></i>
 					</a>
 					<ul class="list-unstyled full-box">
 						<li>
@@ -68,7 +68,7 @@
 				</li>
 				<li>
 					<a href="#!" class="btn-sideBar-SubMenu">
-						<i class="zmdi zmdi-account-add zmdi-hc-fw"></i> Usuarios <i class="zmdi zmdi-caret-down pull-right"></i>
+						<i class="zmdi zmdi-account-add zmdi-hc-fw"></i> Niños <i class="zmdi zmdi-caret-down pull-right"></i>
 					</a>
 					<ul class="list-unstyled full-box">
 						<li>
@@ -107,7 +107,7 @@
 		<!-- Content page -->
 		<div class="container-fluid">
 			<div class="page-header">
-			  <h1 class="text-titles">System <small>Tiles</small></h1>
+			  <h1 class="text-titles">Vacunación Infantil <small>Tiles</small></h1>
 			</div>
 		</div>
 		<div class="full-box text-center" style="padding: 30px 10px;">
@@ -116,7 +116,7 @@
 					CMF
 				</div>
 				<div class="full-box tile-icon text-center">
-					<i class="zmdi zmdi-account"></i>
+					<i class="zmdi zmdi-local-hospital"></i>
 				</div>
 				<div class="full-box tile-number text-titles">
 					<p class="full-box">7</p>
@@ -128,7 +128,7 @@
 					Vacunas
 				</div>
 				<div class="full-box tile-icon text-center">
-					<i class="zmdi zmdi-male-alt"></i>
+					<i class="zmdi zmdi-developer-board"></i>
 				</div>
 				<div class="full-box tile-number text-titles">
 					<p class="full-box">10</p>
