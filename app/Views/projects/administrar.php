@@ -8,7 +8,7 @@
 	<link rel="stylesheet" href="<?php echo base_url('/css/main.css'); ?>">
 </head>
 <body>
-	<!-- SideBar -->
+	<!-- SideBar / barra superior y derecha -->
 	<section class="full-box cover dashboard-sideBar">
 		<div class="full-box dashboard-sideBar-bg btn-menu-dashboard"></div>
 		<div class="full-box dashboard-sideBar-ct">
@@ -72,10 +72,10 @@
 					</a>
 					<ul class="list-unstyled full-box">
 						<li>
-							<a href="admin.html"><i class="zmdi zmdi-account zmdi-hc-fw"></i> Administradores</a>
+							<a href="<?php echo base_url('/infantiles/listado_de_infantiles') ?>"><i class="zmdi zmdi-account zmdi-hc-fw"></i> Listado</a>
 						</li>
 						<li>
-							<a href="client.html"><i class="zmdi zmdi-male-female zmdi-hc-fw"></i> Clientes</a>
+							<a href="<?php echo base_url('/infantil/nuevo_infante') ?>"><i class="zmdi zmdi-male-female zmdi-hc-fw"></i> Agregar Nuevo</a>
 						</li>
 					</ul>
 				</li>
@@ -88,7 +88,7 @@
 		</div>
 	</section>
 
-	<!-- Content page-->
+	<!-- Content page / Contenido de Pagina -->
 	<section class="full-box dashboard-contentPage">
 		<!-- NavBar -->
 		<nav class="full-box dashboard-Navbar">

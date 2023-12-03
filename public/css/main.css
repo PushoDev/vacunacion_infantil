@@ -24,6 +24,9 @@
 	@import url('./theme-pastel-brown.css');
 */
 
+/* Add para prueba */
+@import url('./theme-pastel-brown.css');
+
 
 /*============ Fonts */
 @font-face {
@@ -116,7 +119,7 @@ body, html{
 .dashboard-sideBar{
 	left: 0;
 	z-index: 2;
-	background-image: url('../assets/img/sideBar.png');
+	background-image: url('../assets/img/sideBar.jpg');
 	border-right: 1px solid rgba(255, 255, 255, .7);
 	overflow: hidden;
 }
