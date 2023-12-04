@@ -131,8 +131,8 @@
 					<i class="zmdi zmdi-developer-board"></i>
 				</div>
 				<div class="full-box tile-number text-titles">
-					<p class="full-box">10</p>
-					<small>Register</small>
+					<p class="full-box"><?php echo $CantidadVacunas ?></p>
+					<small>Registradas</small>
 				</div>
 			</article>
 			<article class="full-box tile">
@@ -143,8 +143,8 @@
 					<i class="zmdi zmdi-face"></i>
 				</div>
 				<div class="full-box tile-number text-titles">
-					<p class="full-box">70</p>
-					<small>Register</small>
+					<p class="full-box"><?php echo $CantidadInfantiles ?></p>
+					<small>Registrados</small>
 				</div>
 			</article>
 		</div>
