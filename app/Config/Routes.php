@@ -23,3 +23,7 @@ $routes->get('/logout', 'Home::logout');
 $routes->get('/infantiles/listado_de_infantiles', 'Infantiles::Listado_Infantil');
 $routes->get('/infantil/nuevo_infante', 'Infantiles::Agregar_Infantil');
 $routes->get('/infantil/buscar_infante', 'Infantiles::Buscar_Infantil');
+
+// Rutas para Vacunas
+$routes->get('/vacunas/listado_de_vacunas', 'Vacunas::Listado_Vacunas');
+$routes->get('/vacunas/agregar_nueva_vacuna', 'Vacunas::Agregar_Vacuna');

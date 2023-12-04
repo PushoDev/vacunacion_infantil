@@ -62,7 +62,7 @@
 							<a href="provider.html"><i class="zmdi zmdi-truck zmdi-hc-fw"></i> Proveedores</a>
 						</li>
 						<li>
-							<a href="book.html"><i class="zmdi zmdi-book zmdi-hc-fw"></i> Nuevo libro</a>
+							<a href="<?php echo base_url('/vacunas/agregar_nueva_vacuna') ?>"><i class="zmdi zmdi-book zmdi-hc-fw"></i> Agregar Vacuna</a>
 						</li>
 					</ul>
 				</li>
@@ -80,8 +80,8 @@
 					</ul>
 				</li>
 				<li>
-					<a href="catalog.html">
-						<i class="zmdi zmdi-book-image zmdi-hc-fw"></i> Catalogo
+					<a href="<?php echo base_url('/vacunas/listado_de_vacunas') ?>">
+						<i class="zmdi zmdi-book-image zmdi-hc-fw"></i> Catalogo de Vacunas
 					</a>
 				</li>
 			</ul>

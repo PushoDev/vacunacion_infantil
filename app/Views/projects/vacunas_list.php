@@ -1,24 +1,25 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-	<title>Catalogo</title>
+	<title>Catalogo de Vacunas | Vac.Inf ©</title>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-	<link rel="stylesheet" href="./css/main.css">
+	<link rel="shortcut icon" href="<?php echo base_url('favicon.ico'); ?>" type="image/x-icon">
+	<link rel="stylesheet" href="<?php echo base_url('/css/main.css'); ?>">
 </head>
 <body>
-	<!-- SideBar -->
+	<!-- SideBar / barra superior y derecha -->
 	<section class="full-box cover dashboard-sideBar">
 		<div class="full-box dashboard-sideBar-bg btn-menu-dashboard"></div>
 		<div class="full-box dashboard-sideBar-ct">
 			<!--SideBar Title -->
 			<div class="full-box text-uppercase text-center text-titles dashboard-sideBar-title">
-				company <i class="zmdi zmdi-close btn-menu-dashboard visible-xs"></i>
+				minsap | poli II <i class="zmdi zmdi-close btn-menu-dashboard visible-xs"></i>
 			</div>
-			<!-- SideBar User info -->
+			<!-- SideBar User info / Informacion del Usuario -->
 			<div class="full-box dashboard-sideBar-UserInfo">
 				<figure class="full-box">
-					<img src="./assets/avatars/AdminMaleAvatar.png" alt="UserIcon">
+					<img src="<?php echo base_url('/assets/avatars/AdminMaleAvatar.png'); ?>" alt="UserIcon">
 					<figcaption class="text-center text-titles">User Name</figcaption>
 				</figure>
 				<ul class="full-box list-unstyled text-center">
@@ -33,22 +34,22 @@
 						</a>
 					</li>
 					<li>
-						<a href="#!" title="Salir del sistema" class="btn-exit-system">
+						<a href="<?= site_url('/logout'); ?>" title="Salir del sistema" class="btn-exit-system">
 							<i class="zmdi zmdi-power"></i>
 						</a>
 					</li>
 				</ul>
 			</div>
-			<!-- SideBar Menu -->
+			<!-- SideBar Menu / Barra del Menu -->
 			<ul class="list-unstyled full-box dashboard-sideBar-Menu">
 				<li>
-					<a href="home.html">
-						<i class="zmdi zmdi-view-dashboard zmdi-hc-fw"></i> Dashboard
+					<a href="<?php echo base_url('inventario/administrar'); ?>">
+						<i class="zmdi zmdi-view-dashboard zmdi-hc-fw"></i> Resumen Gral
 					</a>
 				</li>
 				<li>
 					<a href="#!" class="btn-sideBar-SubMenu">
-						<i class="zmdi zmdi-case zmdi-hc-fw"></i> Administración <i class="zmdi zmdi-caret-down pull-right"></i>
+						<i class="zmdi zmdi-case zmdi-hc-fw"></i> Vacunas <i class="zmdi zmdi-caret-down pull-right"></i>
 					</a>
 					<ul class="list-unstyled full-box">
 						<li>
@@ -61,26 +62,26 @@
 							<a href="provider.html"><i class="zmdi zmdi-truck zmdi-hc-fw"></i> Proveedores</a>
 						</li>
 						<li>
-							<a href="book.html"><i class="zmdi zmdi-book zmdi-hc-fw"></i> Nuevo libro</a>
+							<a href="<?php echo base_url('/vacunas/agregar_nueva_vacuna') ?>"><i class="zmdi zmdi-book zmdi-hc-fw"></i> Agregar Vacuna</a>
 						</li>
 					</ul>
 				</li>
 				<li>
 					<a href="#!" class="btn-sideBar-SubMenu">
-						<i class="zmdi zmdi-account-add zmdi-hc-fw"></i> Usuarios <i class="zmdi zmdi-caret-down pull-right"></i>
+						<i class="zmdi zmdi-account-add zmdi-hc-fw"></i> Niños <i class="zmdi zmdi-caret-down pull-right"></i>
 					</a>
 					<ul class="list-unstyled full-box">
 						<li>
-							<a href="admin.html"><i class="zmdi zmdi-account zmdi-hc-fw"></i> Administradores</a>
+							<a href="<?php echo base_url('/infantiles/listado_de_infantiles') ?>"><i class="zmdi zmdi-account zmdi-hc-fw"></i> Listado</a>
 						</li>
 						<li>
-							<a href="client.html"><i class="zmdi zmdi-male-female zmdi-hc-fw"></i> Clientes</a>
+							<a href="<?php echo base_url('/infantil/nuevo_infante') ?>"><i class="zmdi zmdi-male-female zmdi-hc-fw"></i> Agregar Nuevo</a>
 						</li>
 					</ul>
 				</li>
 				<li>
-					<a href="catalog.html">
-						<i class="zmdi zmdi-book-image zmdi-hc-fw"></i> Catalogo
+					<a href="<?php echo base_url('/vacunas/listado_de_vacunas') ?>">
+						<i class="zmdi zmdi-book-image zmdi-hc-fw"></i> Catalogo de Vacunas
 					</a>
 				</li>
 			</ul>
@@ -181,13 +182,13 @@
 	</section>
 
 	<!--====== Scripts -->
-	<script src="./js/jquery-3.1.1.min.js"></script>
-	<script src="./js/sweetalert2.min.js"></script>
-	<script src="./js/bootstrap.min.js"></script>
-	<script src="./js/material.min.js"></script>
-	<script src="./js/ripples.min.js"></script>
-	<script src="./js/jquery.mCustomScrollbar.concat.min.js"></script>
-	<script src="./js/main.js"></script>
+	<script src="<?php echo base_url('/js/jquery-3.1.1.min.js'); ?>"></script>
+	<script src="<?php echo base_url('/js/sweetalert2.min.js'); ?>"></script>
+	<script src="<?php echo base_url('/js/bootstrap.min.js'); ?>"></script>
+	<script src="<?php echo base_url('/js/material.min.js'); ?>"></script>
+	<script src="<?php echo base_url('/js/ripples.min.js'); ?>"></script>
+	<script src="<?php echo base_url('/js/jquery.mCustomScrollbar.concat.min.js'); ?>"></script>
+	<script src="<?php echo base_url('/js/main.js'); ?>"></script>
 	<script>
 		$.material.init();
 	</script>
