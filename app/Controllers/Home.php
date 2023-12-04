@@ -4,6 +4,11 @@ namespace App\Controllers;
 
 // Modelos TUsuarios para el manejo de los usuarios a ingresar
 use App\Models\TUsuarios;
+// Modelo de las vacunas
+use App\Models\Vacunas;
+// Modelo de los pacientes infantiles
+use App\Models\Infantiles;
+
 
 use CodeIgniter\Controller;
 
@@ -60,8 +65,20 @@ class Home extends BaseController
             return redirect()->to('/');
         }
 
+        // Cantidad de Vacunas en el Sist.
+        $modeloVacuna = new Vacunas();
+        $CantidaddeVacunas = $modeloVacuna->obtenerCantidaddeVacunas();
+        // Catidad de Niños en el Sist.
+        $modeloInfantil = new Infantiles();
+        $Cantidaddepacientes = $modeloInfantil->obtenerCantidaddeInfantiles();
+
+
         // Usuario autenticado, mostrar la pantalla de administración
-        return view('projects/administrar');
+        return view('projects/administrar', [
+            'CantidadVacunas'=> $CantidaddeVacunas,
+            'CantidadInfantiles'=> $Cantidaddepacientes,
+        ]);
+        
     }
 
     // Cerrar sesión

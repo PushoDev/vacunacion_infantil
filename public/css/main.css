@@ -12,20 +12,8 @@
 @import url('./material-design-iconic-font.min.css');
 
 
-/*
-	=== Temas disponibles ===
-	1 - theme-smoky-black.css
-	2 - theme-pastel-brown.css
-	3 - theme-paynes-grey.css
-	4 - theme-middle-purple.css
-	5 - theme-portland-orange.css
-	
-	Para usar el tema use @import fuera de este comentario, ejemplo:
-	@import url('./theme-pastel-brown.css');
-*/
-
-/* Add para prueba */
-@import url('./theme-pastel-brown.css');
+/* Tema del DashBoard */
+@import url('./theme-pushodev.css');
 
 
 /*============ Fonts */
