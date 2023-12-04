@@ -17,3 +17,9 @@ $routes->get('/inventario/administrar', 'Home::administracion');
 
 // Salir del proyecto
 $routes->get('/logout', 'Home::logout');
+
+
+// Rutas para Infantiles
+$routes->get('/infantiles/listado_de_infantiles', 'Infantiles::Listado_Infantil');
+$routes->get('/infantil/nuevo_infante', 'Infantiles::Agregar_Infantil');
+$routes->get('/infantil/buscar_infante', 'Infantiles::Buscar_Infantil');
