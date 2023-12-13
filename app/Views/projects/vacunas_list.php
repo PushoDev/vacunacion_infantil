@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-	<title>Catalogo de Vacunas | Vac.Inf ©</title>
+	<title>Catálogo de Vacunas | Vac.Inf ©</title>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
 	<link rel="shortcut icon" href="<?php echo base_url('favicon.ico'); ?>" type="image/x-icon">
@@ -106,62 +106,60 @@
 		<!-- Content page -->
 		<div class="container-fluid">
 			<div class="page-header">
-			  <h1 class="text-titles"><i class="zmdi zmdi-book-image zmdi-hc-fw"></i> CATALOGO</h1>
+			  <h1 class="text-titles"><i class="zmdi zmdi-book-image zmdi-hc-fw"></i> CATÁLOGO DE VACUNAS</h1>
 			</div>
-			<p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse voluptas reiciendis tempora voluptatum eius porro ipsa quae voluptates officiis sapiente sunt dolorem, velit quos a qui nobis sed, dignissimos possimus!</p>
+			<p class="lead">
+				Catálogo de Vacunas registradas en el esquema nacional...
+			</p>
 		</div>
 		<div class="container-fluid text-center">
 			<div class="btn-group">
-              <a href="javascript:void(0)" class="btn btn-default btn-raised">SELECCIONE UNA CATEORÍA</a>
+              <a href="javascript:void(0)" class="btn btn-default btn-raised">SELECCIONE FILTRO</a>
               <a href="javascript:void(0)" data-target="dropdown-menu" class="btn btn-default btn-raised dropdown-toggle" data-toggle="dropdown"><span class="caret"></span></a>
               <ul class="dropdown-menu">
-                <li><a href="#!">Categoría 1</a></li>
-                <li><a href="#!">Categoría 2</a></li>
-                <li><a href="#!">Categoría 3</a></li>
-                <li><a href="#!">Categoría 4</a></li>
-                <li><a href="#!">Categoría 5</a></li>
-                <li><a href="#!">Categoría 6</a></li>
-                <li><a href="#!">Categoría 7</a></li>
+                <li><a href="#!">1 Dosis</a></li>
+                <li><a href="#!">2 Dosis</a></li>
+                <li><a href="#!">3 Dosis</a></li>
+                <li><a href="#!">Refuerzos</a></li>
+                <li><a href="#!">Intramusculares</a></li>
+                <li><a href="#!">Orales</a></li>
+                
               </ul>
             </div>
 		</div>
 		<div class="container-fluid">
-			<h2 class="text-titles text-center">Categoría seleccionada</h2>
+			<h2 class="text-titles text-center">Filtro Seleccionado</h2>
 			<div class="row">
 				<div class="col-xs-12">
 					<div class="list-group">
+						<!-- Listado de Vacunas -->
+						<?php foreach ($esqvac as $key): ?>
+
 						<div class="list-group-item">
 							<div class="row-picture">
 								<img class="circle" src="assets/book/book-default.png" alt="icon">
 							</div>
 							<div class="row-content">
-								<h4 class="list-group-item-heading">1 - Título completo del libro</h4>
+								<h4 class="list-group-item-heading">
+								<td><?php echo $key-> nombre ?>								
+								</h4>
 								<p class="list-group-item-text">
-									<strong>Autor: </strong>Nombre Autor del libro <br>
+									<strong><?php echo $key-> id ?>: </strong><?php echo $key-> resumen ?>.
+									| Dosis(ml): <?php echo $key-> dosis_ml ?>.
+									| Vía de Administración: <?php echo $key-> via ?>.
+									
+									<br>
 									<a href="book-info.html" class="btn btn-primary" title="Más información"><i class="zmdi zmdi-info"></i></a>
 									<a href="#!" class="btn btn-primary" title="Ver PDF"><i class="zmdi zmdi-file"></i></a>
 									<a href="#!" class="btn btn-primary" title="Descargar PDF"><i class="zmdi zmdi-cloud-download"></i></a>
-									<a href="book-config.html" class="btn btn-primary" title="Gestionar libro"><i class="zmdi zmdi-wrench"></i></a>
+									<a href="book-config.html" class="btn btn-primary" title="Gestionar Vacuna"><i class="zmdi zmdi-wrench"></i></a>
 								</p>
 							</div>
 						</div>
 						<div class="list-group-separator"></div>
-						<div class="list-group-item">
-							<div class="row-picture">
-								<img src="assets/book/book-cover.jpg" alt="icon">
-							</div>
-							<div class="row-content">
-								<h4 class="list-group-item-heading">2 - Título completo del libro</h4>
-								<p class="list-group-item-text">
-									<strong>Autor: </strong>Nombre Autor del libro <br>
-									<a href="book-info.html" class="btn btn-primary" title="Más información"><i class="zmdi zmdi-info"></i></a>
-									<a href="#!" class="btn btn-primary" title="Ver PDF"><i class="zmdi zmdi-file"></i></a>
-									<a href="#!" class="btn btn-primary" title="Descargar PDF"><i class="zmdi zmdi-cloud-download"></i></a>
-									<a href="book-config.html" class="btn btn-primary" title="Gestionar libro"><i class="zmdi zmdi-wrench"></i></a>
-								</p>
-							</div>
-						</div>
-						<div class="list-group-separator"></div>
+
+						<?php endforeach; ?>
+						<!-- Fin del Listado de Vacunas -->
 					</div>
 					<nav class="text-center">
 						<ul class="pagination pagination-sm">

@@ -15,4 +15,20 @@ class Vacunas extends Model
     {
         return $this->countAll();
     }
+
+    // Listar las vacunas
+    // public function listarVacunas()
+    // {
+    //     $vacunas = $this->db->query("SELECT * FROM vacunas");
+    //     return $vacunas->getResult();
+    // }
+
+    // Agregar Vacuna
+
+    // Obtener Vacuna
+
+    // Actualizar Vacuna
+
+    // Eliminar Vacuna
+
 }
